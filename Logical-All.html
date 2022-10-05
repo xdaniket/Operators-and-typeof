@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body></body>
+</html>
+<script>
+  //
+
+  //   In logical && operator it is neecesary to all the condition will become true than statemnt will run..
+
+  //
+
+  //  Q:
+
+  let number = 80;
+  if (number >= 180 && number <= 200) {
+    console.log("Promoted by 1st division");
+  } else if (number >= 120 && number <= 179) {
+    console.log("Promoted by 2nd division");
+  } else if (number >= 80 && number <= 119) {
+    console.log("Promoted by 3rd division");
+  } else if (number >= 40 && number <= 79) {
+    console.log("Promoted by 4th division");
+  } else {
+    console.log("You are failed");
+  }
+
+  //  Q:
+
+  let age = 20;
+  let gender = "Male";
+  let city = "Bhopal";
+
+  let entry =
+    age > 18 && gender == "Male" && city == "Bhopal" ? "U r in" : "U r not in";
+  console.log(entry); //     u r in
+
+  let entrys =
+    age < 18 && gender == "Male" && city == "Bhopal" ? "U r in" : "U r not in";
+  console.log(entrys); //     u r not in
+
+  let entryss =
+    age < 18 && gender == "Male" && city !== "Bhopal" ? "U r in" : "U r not in";
+  console.log(entryss); //        u r not in
+
+  //
+
+  //   In logical || operator if any one condition is true than the  statement will run
+
+  // Q:
+  let a = "apple";
+  let b = "ball";
+  let c = "cat";
+  let mixAll =
+    a == "appple" || b == "ball" || c == "ct"
+      ? `{A:${a}}:{B:${b}}:{C:${c}}`
+      : `Not Mix`;
+  console.log(mixAll);
+
+  // Q :
+
+  let name = "annu";
+  let citys = "bhopal";
+  let ages = 22;
+
+  if (name == "annnu" || name == "anu") {
+    console.log("name");
+  } else if (citys == "Bhopal" || citys == "bhopal") {
+    console.log("city");
+  } else if (ages == 21 || ages == 23) {
+    console.log("age");
+  } else {
+    console.log("Failed");
+  }
+
+  //   In logical !  Not operator, if condition is true so it will make that false nd if condition is false so it will make that true
+
+  //
+  // let ab = 0;
+  // let bc = 0;
+  // let cd = (ab == bc);
+  // console.log(cd); // true
+
+  // let ab = 0;
+  // let bc = 0;
+  // let cd = !(ab == bc); //  becoz it converts tru condition in false cndition
+  // console.log(cd); //   false
+
+  // let ab = "annu";
+  // let bc = "an";
+  // let cd = !(ab == bc); //  becoz it converts false condition in tru cndition
+  // console.log(cd);//    true
+
+  // let a1 = 0;
+  // let b1 = 0;
+  // let c1 = !(a1 != b1);
+  // console.log(c1); // true
+
+  // let a1 = 0;
+  // let b1 = 0;
+  // let c1 = a1 != b1;
+  // console.log(c1); // false
+</script>

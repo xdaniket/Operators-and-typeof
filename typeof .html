@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body></body>
+</html>
+<script>
+  // typeof method is used to find a datatype nd all datatypes is written in string ''
+
+  typeof NaN; //                     number
+  typeof 10; //                      number
+  typeof "10", "aniket"; //          string
+  typeof true, false; //             boolean
+  typeof ["aniket", 21]; //          object
+  typeof { name: "annu" }; //        object
+  typeof Number; //                  function
+  typeof null; //                    object
+  typeof a; //                       undefined
+
+  // if more than one typeof we used so there datatype is string
+  typeof typeof 2; //                     string
+  typeof typeof typeof typeof -21; //     string
+
+  typeof 10 + 2; //             number2  //  + concatinate the values
+  typeof 10 + "2"; //           number2
+  typeof (10 + 2); //           number
+  typeof (10 + "2"); //         string  102 cncatinate yadi ()is k andr number string ya string num ho to string he aayega
+  typeof 10 - 2; //             NaN  except the + sign all are NaN
+  typeof 1 - 1 - 1 - 1; //      NaN
+  typeof "annu" + 2; //         string2
+  typeof "1" + "3"; //          string3
+  typeof 1 + 1 + "2"; //        number12
+
+  //
+
+  typeof (10 + 10 + +"annu"); //  number    yadi ++ k bad "annu" kahi bhi aa jaye to sb NaN or datatype number
+  typeof 10 + 10 + +"2"; //       22 (number102)
+  typeof 10 + 10 + +"av"; //      number10NaN
+
+  // yadi () iske andr ++ lge h to  datatype hmesha numbr he hoga
+
+  10 + 2 + 2 + +"a"; //            NaN
+  typeof (10 + 2 + 2 + +"a"); //   number
+</script>

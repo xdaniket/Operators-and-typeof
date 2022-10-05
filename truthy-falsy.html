@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body></body>
+</html>
+<script>
+  // There are two types of values
+  //  1.Truthy nd 2.Falsy  (Known as Boolean values)
+
+  //  Boolean() is used to check truthy nd falsy Boolean(2)=Truthy Boolean(!2)=falsy
+
+  // ( !! ) is used to check a falsy nd truthy value
+  // ( ! ) is make to falsy into truthy nd truthy into falsy
+
+  // 1. Falsy Value
+
+  !!0; //          false
+  !!undefined; //  false
+  !!null; //       false
+  !!false; //      false
+  !!""; //         false
+  !!Nan; //        false
+
+  // 2. Truthy Values
+
+  !0; //          True
+  !undefined; //  True
+  !null; //       True
+  !false; //      True
+  !""; //         True
+  !Nan; //        True
+
+  !!"aniket"; //     True
+  !!"342"; //        True
+  !!-233; //         True
+  !!66 * 2; //       True
+
+  //  inside dbl string nd valid value is truthy value
+
+  boolean("urnfknk"); //  true
+  boolean(""); //         false
+  boolean("45dg"); //     true
+  boolean(33); //         true
+  boolean(33 - 3); //     true
+</script>

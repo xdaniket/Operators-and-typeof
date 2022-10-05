@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body></body>
+</html>
+<script>
+  // Ternary operator is shorthand version of if else statement.
+
+  let fname = "Annu";
+  let lname = "Thakur";
+  let fulName = fname !== lname ? `My fullName is ${fname} ${lname}` : `failed`;
+  console.log(fulName);
+
+  let a = 22;
+  let b = 33;
+  let c = a < b ? "greater" : "smaller";
+  console.log(c);
+
+  //  Multiple condition
+
+  let age = 20;
+  let gender = "male";
+
+  let result =
+    age > 18 && gender === "male"
+      ? "Yes u are eligible to vote"
+      : "No u r not eligible to vote";
+
+  console.log(result);
+
+  let ages = 20;
+  let genders = "male";
+
+  let results =
+    ages < 18 || genders === "male"
+      ? "Yes u are eligible to vote"
+      : "No u r not eligible to vote";
+
+  console.log(results);
+
+  let ageP = 21;
+  let genderP = "female";
+  let color = "white";
+
+  let resultS =
+    age > 18 || (genderP == "female" && color !== "white")
+      ? "You r star"
+      : "U r n't star";
+  console.log(resultS); //       u r
+
+  let resultSS =
+    age < 18 || (genderP == "female" && color !== "white")
+      ? "You r star"
+      : "U r n't star";
+  console.log(resultSS); //      u r nt
+
+  let resultSSS =
+    (age > 18 && genderP != "female") || color == "white"
+      ? "You r star"
+      : "U r n't star";
+  console.log(resultSSS); //     u r
+
+  let resultSSSS =
+    (age < 18 && genderP != "female") || color == "white"
+      ? "You r star"
+      : "U r n't star";
+  console.log(resultSSSS); //    u r
+
+  // Ternary operator
+</script>
